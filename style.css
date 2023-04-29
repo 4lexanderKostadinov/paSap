@@ -59,8 +59,8 @@ nav ul li a {
     border-radius: 10px;
 }
 
-a.active,
-a:hover {
+.nav-link.active,
+.nav-link:hover {
     background: var(--darkbluelighter);
 }
 
@@ -104,21 +104,22 @@ a:hover {
         height: 100vh;
         background: var(--darkbluelighter);
         top: 80px;
-        left:-100%;
+        left: -100%;
         text-align: center;
     }
     nav ul li {
         display: block;
         margin: 50px 0;
-        line-height: 30px; 
+        line-height: 30px;
     }
 
-    nav ul li a{
+    nav ul li a {
         font-size: 20px;
     }
-    a:hover, a.active {
+    a:hover,
+    a.active {
         background: none;
-        color: var(--palegreen)
+        color: var(--palegreen);
     }
     #check:checked ~ ul {
         left: 0;
