@@ -177,6 +177,7 @@ button:hover {
     .checkbtn {
         display: block;
     }
+
     ul {
         position: fixed;
         width: 100%;
@@ -186,6 +187,7 @@ button:hover {
         left: -100%;
         text-align: center;
     }
+    
     nav ul li {
         display: block;
         margin: 50px 0;
