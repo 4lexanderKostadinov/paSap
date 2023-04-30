@@ -64,12 +64,6 @@ nav ul li a {
     background: var(--darkbluelighter);
 }
 
-.color-boxes {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
 
 .checkbtn {
     font-size: 1.75rem;
@@ -85,6 +79,42 @@ nav ul li a {
     display: none;
 }
 
+.container {
+    width: 100%;
+    /* background-color: #1b4388; */
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.swiper {
+    width: 400px;
+    height: fit-content;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 40px;
+}
+
+.swiper-slide {
+    width: 400px;
+    height: 400px;
+}
+
+.swiper-slide img {
+    width: 400px;
+    height: 400px;
+}
+
+.container h1 {
+    margin-bottom: 40px;
+}
+
+.container h1 {
+    margin-top: 40px;
+}
+
 @media (max-width: 1024px) {
     .logo {
         margin-left: 50px;
@@ -95,9 +125,21 @@ nav ul li a {
 }
 
 @media (max-width: 768px) {
+    nav {
+        z-index: 99;
+        position: absolute;
+        margin-bottom: 20px;
+        top: 0;
+    }
+
+    .logo {
+        margin-left: 20px;
+    }
+
     .checkbtn {
         display: block;
     }
+
     ul {
         position: fixed;
         width: 100%;
@@ -116,12 +158,51 @@ nav ul li a {
     nav ul li a {
         font-size: 20px;
     }
-    a:hover,
-    a.active {
+    .nav-link.active,
+    .nav-link:hover {
         background: none;
         color: var(--palegreen);
     }
     #check:checked ~ ul {
         left: 0;
+    }
+
+    
+    .wrapper {
+        z-index: -1;
+        margin-top: 40px;
+    }
+
+    .container {
+        margin-top: 0px;
+    }
+
+    .container h1 {
+        margin-bottom: 10px;
+    }
+
+    .container .bottom-h1 {
+        margin-top: 20px;
+    }
+
+    .swiper {
+        width: 80vw;
+        height: fit-content;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+        border-radius: 40px;
+    }
+    
+    .swiper-slide {
+        width: 400px;
+        height: 400px;
+    }
+    
+    .swiper-slide img {
+        width: 400px;
+        height: 400px;
+    }
+    
+    .container .top-h1 {
+        margin-bottom: 40px;
     }
 }

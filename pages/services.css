@@ -85,6 +85,12 @@ nav ul li a {
     display: none;
 }
 
+
+.wrapper {
+    z-index: -1;
+    margin-top: 40px;
+}
+
 @media (max-width: 1024px) {
     .logo {
         margin-left: 50px;
@@ -95,6 +101,17 @@ nav ul li a {
 }
 
 @media (max-width: 768px) {
+    nav {
+        z-index: 99;
+        position: absolute;
+        margin-bottom: 20px;
+        top: 0;
+    }
+
+    .logo {
+        margin-left: 20px;
+    }
+
     .checkbtn {
         display: block;
     }
@@ -116,8 +133,8 @@ nav ul li a {
     nav ul li a {
         font-size: 20px;
     }
-    a:hover,
-    a.active {
+    .nav-link.active,
+    .nav-link:hover {
         background: none;
         color: var(--palegreen);
     }

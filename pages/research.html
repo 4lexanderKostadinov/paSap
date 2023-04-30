@@ -10,8 +10,11 @@
     <link href="https://fonts.cdnfonts.com/css/pt-sans-2" rel="stylesheet">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="icon" href="images/logo/paSap_logo_transparent.png">
-    <title>paSap | Контакт</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="icon" href="../images/logo/paSap_logo_transparent.png">
+    <title>paSap | Проучване</title>
 </head>
 
 <body>
@@ -23,12 +26,68 @@
         <ul>
             <li><a class="nav-link" href="../index.html">Начало</a></li>
             <li><a class="nav-link" href="services.html">Услуги</a></li>
-            <li><a class="active nav-link" href="research.html">Проучване</a></li>
+            <li><a class="active nav-link" href="research.html">Проучване</a>
+            </li>
             <li><a class="nav-link" href="about_us.html">За нас</a></li>
         </ul>
     </nav>
 
-    <section></section>
+    <div class="container">
+        <h1 class="top-h1">Попитахме над 200 души...</h1>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="../images/1.jpg" alt="">
+                </div>
+                <div class="swiper-slide"><img src="../images/2.jpg" alt="">
+                </div>
+                <div class="swiper-slide"><img src="../images/3.jpg" alt="">
+                </div>
+                <div class="swiper-slide"><img src="../images/4.jpg" alt="">
+                </div>
+                <div class="swiper-slide"><img src="../images/6.jpg" alt="">
+                </div>
+                <div class="swiper-slide"><img src="../images/7.jpg" alt="">
+                </div>
+                <div class="swiper-slide"><img src="../images/9.jpg" alt="">
+                </div>
+                <div class="swiper-slide"><img src="../images/10.jpg" alt="">
+                </div>
+                <div class="swiper-slide"><img src="../images/11.jpg" alt="">
+                </div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+        <h1 class="bottom-h1">Получихме голяма подкрепа</h1>
+    </div>
+
+
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>const swiper = new Swiper('.swiper', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });</script>
 </body>
 
 </html>
