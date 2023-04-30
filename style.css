@@ -157,6 +157,9 @@ button:hover {
     .hero-text h1 {
         font-size: 3rem;
     }
+
+    .container {
+    }
 }
 
 @media (max-width: 768px) {
@@ -203,9 +206,10 @@ button:hover {
     }
 
     .container {
-      margin-top: 80px;
+        margin-top: 80px;
+        z-index: -1;
+        margin-top: 40px;
     }
-
 }
 
 @media (max-width: 678px) {
