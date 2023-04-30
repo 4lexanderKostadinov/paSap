@@ -157,9 +157,6 @@ button:hover {
     .hero-text h1 {
         font-size: 3rem;
     }
-
-    .container {
-    }
 }
 
 @media (max-width: 768px) {
@@ -187,7 +184,7 @@ button:hover {
         left: -100%;
         text-align: center;
     }
-    
+
     nav ul li {
         display: block;
         margin: 50px 0;
@@ -216,11 +213,5 @@ button:hover {
 @media (max-width: 678px) {
     .hero-text h1 {
         font-size: 2rem;
-    }
-}
-
-@media (max-width: 428px) {
-    nav ul {
-        display: none;
     }
 }
